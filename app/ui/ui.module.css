@@ -1,0 +1,32 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  background-color: var(--accent);
+}
+.nav-wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 100%;
+  top: 12px;
+}
+.navlink {
+  margin: 16px;
+  position: relative;
+  bottom: 8px;
+}
+.active-link {
+  text-decoration: underline;
+}
+.logo-text {
+  font-size: 48px;
+  font-weight: 200;
+}
