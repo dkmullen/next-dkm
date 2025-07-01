@@ -1,6 +1,6 @@
 .top-bar {
   display: flex;
-  align-items: center;
+  align-items:center;
   height: 90px;
   background-color: var(--accent);
 }
@@ -13,7 +13,7 @@
 }
 .nav-links {
   display: flex;
-  justify-content: end;
+  justify-content:flex-end;
   position: relative;
   width: 100%;
   top: 12px;
@@ -22,11 +22,13 @@
   margin: 16px;
   position: relative;
   bottom: 8px;
+  color: white;
 }
 .active-link {
   text-decoration: underline;
 }
-.logo-text {
+.logo-text a {
   font-size: 48px;
   font-weight: 200;
+  color: white;
 }

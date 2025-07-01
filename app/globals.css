@@ -1,7 +1,8 @@
 :root {
-  --background: #243642;
-  --foreground: white;
+  --background: #152d2f;
+  --foreground: #ffffff;
   --accent: #387478;
+  --accent-light: #55b7bd;
   --font-roboto-mono: 'Roboto Mono', Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
@@ -12,8 +13,27 @@ body {
   font-family: var(--font-roboto-mono);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.page {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
 }
 a {
-  color: inherit;
   text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--accent-light);
 }

@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 export default function Page() {
   return (
-    <>
+    <div className='page'>
       <h3>Contact Me</h3>
       <form
         id='contact-form'
@@ -60,6 +60,6 @@ export default function Page() {
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 }

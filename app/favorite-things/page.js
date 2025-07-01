@@ -1,3 +1,7 @@
 export default function Page() {
-  return <p>Favorite Things</p>;
+  return (
+<   div className="page">
+      <p>Favorite Things</p>;
+    </div>
+  )
 }
