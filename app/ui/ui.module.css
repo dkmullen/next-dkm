@@ -39,4 +39,40 @@
 }
 .book-card-wrapper {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.image-left {
+  flex-direction: row;
+}
+
+.image-right {
+  flex-direction: row-reverse;
+}
+
+.book-image {
+  flex-shrink: 0;
+}
+
+.book-content {
+  flex: 1;
+}
+
+.fav-title {
+  margin-bottom: 1px;
+}
+.fav-links {
+  margin-top: 1px;
+  font-size: 1rem;
+}
+.favsLink {
+  font-weight: 200;
+  color: var(--accent-light);
+}
+.favsLink:hover,
+.active-favsLink {
+  color: var(--foreground);
 }

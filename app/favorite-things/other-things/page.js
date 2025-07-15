@@ -1,3 +1,13 @@
+// import styles from './page.module.css';
+import FavoritesTitlebar from '@/app/ui/favorites-titlebar';
+
 export default function Page() {
-  return <p>Other Things</p>;
+  return (
+    <>
+      <div>
+        <FavoritesTitlebar page='Other Things' />
+      </div>
+      ;
+    </>
+  );
 }

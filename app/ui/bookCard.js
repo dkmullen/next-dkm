@@ -2,12 +2,16 @@ import Image from 'next/image';
 import DOMPurify from 'isomorphic-dompurify';
 import styles from './ui.module.css';
 
-export default function BookCard({ item }) {
+export default function BookCard({ item, index }) {
   const safeHTML = DOMPurify.sanitize(item.description);
 
   return (
     <>
-      <div className={styles['book-card-wrapper']}>
+      <div
+        className={`${styles['book-card-wrapper']} ${
+          index % 2 === 0 ? styles['image-left'] : styles['image-right']
+        }`}
+      >
         <div
           style={{
             position: 'relative',
