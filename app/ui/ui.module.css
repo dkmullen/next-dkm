@@ -32,7 +32,11 @@
   font-weight: 200;
   color: white;
 }
-.video-description {
+.video-description,
+.book-title {
   color: var(--foreground);
   font-weight: 200;
+}
+.book-card-wrapper {
+  display: flex;
 }
