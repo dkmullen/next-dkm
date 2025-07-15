@@ -1,0 +1,47 @@
+export const favoriteBooks = [
+  {
+    title: 'Shoeless Joe',
+    thumbnail: 'shoeless.jpg',
+    alt: 'The cover of the book Shoeless Joe, with a ghostly baseball player standing in a field of corn.',
+    author: 'W. P. Kinsella',
+    description: `This is the lyrical novel from 1982 about baseball, love, fathers and sons, writing, self-discovery, and (of course) Shoeless Joe Jackson. You know it from Kevin Costner’s <strong>Field of Dreams</strong> (1989), which moved me when I first saw it (in my mid-20s), but the book is so much richer, deeper, and more magical.`,
+  },
+  {
+    title: 'Cat&#39;s Cradle',
+    thumbnail: 'cats_cradle.jpg',
+    alt: 'The cover of the book Cat&#39;s Cradle, with a drawing of an empty bird cage with an open door.',
+    author: 'Kurt Vonnegut',
+    description: `<strong>Cat's Cradle</strong> offers the best of Vonnegut's well-known satire and absurdity contained in a compelling and forward-moving story. This novel sheds light on so many aspects of human behavior - our tribalism, our need for purpose, religion, the lies we tell ourselves and each other, our arrogance and short-sightedness, and our profound potential to destroy ourselves. Hilarious and devastating.`,
+  },
+  {
+    title: 'Man&#39;s Search for Meaning',
+    thumbnail: 'frankl.jpg',
+    alt: 'The cover of the book Man&#39;s Search for Meaning, with the title over abstract colors.',
+    author: 'Victor Frankl',
+    description: `Frankl lost everything in the Nazi concentration camps, including his career, his wife, his wealth and his possessions. Everything <strong>except</strong> the ability to choose his response, which is one of the main themes of this powerful book. A key lesson: We shouldn't ask "What is the meaning of life?" but instead realize that we are the ones being asked.`,
+  },
+  {
+    title: 'What it is Like to Go to War',
+    thumbnail: 'marlantes.jpg',
+    alt: 'The cover of the book What it is Like to Go to War, with small pictures from past wars under the title.',
+    author: 'Karl Marlantes',
+    description: `Marlantes is a wise and insightful narrator of not only his Vietnam experiences but also the of his struggles and growth in the lifetime since he came home. Actor <strong>Bronson Pinchot</strong> brings the narrative to life with a fantastic performance (and those who remember him in <em>Beverly Hills Cop</em> will enjoy noting the difference in his pronunciation of the name "Axel").`,
+    audioReader: 'Bronson Pinchot',
+  },
+  {
+    title: 'The Great Gatsby',
+    thumbnail: 'gatsby.jpg',
+    alt: `The famous original cover of the book The Great Gatsby, with a woman&#39;s face and lips hovering in the night sky over the lights of an amuzement park`,
+    author: 'F. Scott Fitzgerald',
+    description: `Gatsby has so much to say about America, even a century after it was written. It addresses our class distinctions, old money vs. new, celebrity worship, the protections that riches offer vs. the limitations for those born poor - and all of this in a story that is often funny, sometimes tragic, and always perfectly written. Actor <strong>Anthony Heald</strong> gets this performance just right (as always).`,
+    audioReader: 'Anthony Heald',
+  },
+  {
+    title: 'Heart of Darkness',
+    thumbnail: 'conrad.jpg',
+    alt: `The cover of the book Heart of Darkness, showing the trees of a jungle`,
+    author: 'Joseph Conrad',
+    description: `I tried and failed in college to get through this short novel on British colonialism in Africa. But I got interested again after falling for <strong>Apocalypse Now</strong> (which is loosely based on Heart of Darkness), and this wonderful rendition by British actor and director <strong>Kenneth Branagh</strong> pulls you into and through this study of power, ambition, greed, madness, and what makes us (and keeps us) human.`,
+    audioReader: 'Kenneth Branagh',
+  },
+];
