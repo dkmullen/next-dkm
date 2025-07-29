@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import clsx from 'clsx';
 
 export default function Page() {
   return (
@@ -6,10 +7,10 @@ export default function Page() {
       <h3>Contact Me</h3>
       <form
         id='contact-form'
-        onsubmit='event.preventDefault(); submitMessage();'
+
       >
         <div className={styles['form-element']}>
-          <label for='name'>Name:</label>
+          <label htmlFor='name'>Name:</label>
           <div>
             <input
               type='text'
@@ -20,8 +21,8 @@ export default function Page() {
             />
           </div>
         </div>
-        <div class='form-element'>
-          <label for='email'>Email:</label>
+        <div className={styles['form-element']}>
+          <label htmlFor='email'>Email:</label>
           <br />
           <div>
             <input
@@ -32,17 +33,17 @@ export default function Page() {
               required
             />
           </div>
-          <div id='email-error-message' class='hide'>
+          <div className={clsx(styles['error-message'], styles.hide)}>
             Please enter a valid email address.
           </div>
         </div>
-        <div class='form-element'>
-          <label for='message'>Message:</label>
+        <div className={styles['form-element']}>
+          <label htmlFor='message'>Message:</label>
           <div>
             <textarea
               cols='48'
               rows='10'
-              className={(styles['input'], styles['text-area'])}
+              className={styles['text-area']}
               id='message'
               required
             ></textarea>
@@ -51,11 +52,8 @@ export default function Page() {
 
         <button
           type='submit'
-          class='button primary disabled'
+          className={clsx('button', 'accent')}
           id='submit-button'
-          onmousedown='pressButton()'
-          onmouseup='releaseButton()'
-          disabled
         >
           Submit
         </button>
@@ -63,3 +61,6 @@ export default function Page() {
     </div>
   );
 }
+
+          // onmousedown='pressButton()'
+          // onmouseup='releaseButton()'

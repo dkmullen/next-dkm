@@ -37,3 +37,15 @@ a {
 a:hover {
   color: var(--accent-light);
 }
+.button {
+  height: 40px;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 0 1rem;
+}
+
+.button.accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--foreground)
+}
