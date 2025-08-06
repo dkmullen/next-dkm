@@ -13,18 +13,20 @@ export default function BookCard({ item, index }) {
         }`}
       >
         <div
+        className={styles['book-image-wrapper']}
           style={{
             position: 'relative',
             width: '100%',
             height: 'auto',
+            marginTop: '10px'
           }}
         >
           <Image
             className={styles['book-thumbnail']}
             src={`/books/${item.thumbnail}`}
             alt={item.alt}
-            width={300}
-            height={400}
+            width={225}
+            height={300}
           />
         </div>
         <div>
@@ -42,6 +44,8 @@ export default function BookCard({ item, index }) {
           />
         </div>
       </div>
+    <hr style={{ margin: '2rem 0', opacity: '0.4' }} />
+
     </>
   );
 }

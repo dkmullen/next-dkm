@@ -10,6 +10,7 @@ export default function MusicCard({ item }) {
     <>
       <div className={styles['card-wrapper']}>
         <Link href={item.url}>
+        <div className={styles['music-thumbnail-wrapper']}>
           <div
             style={{
               position: 'relative',
@@ -29,6 +30,7 @@ export default function MusicCard({ item }) {
               style={{ objectFit: 'contain' }} // or 'cover' or 'fill'
               sizes='100%'
             />
+          </div>
           </div>
           <p
             className={styles['video-description']}

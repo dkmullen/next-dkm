@@ -36,6 +36,11 @@
 .book-title {
   color: var(--foreground);
   font-weight: 200;
+  margin-top: 1px;
+}
+.video-description {
+  max-width: 480px;
+  margin: auto;
 }
 .book-card-wrapper {
   display: flex;
@@ -55,10 +60,25 @@
 
 .book-image {
   flex-shrink: 0;
-}
 
+}
 .book-content {
   flex: 1;
+}
+
+@media (max-width: 799px) {
+  .music-thumbnail-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 699px) {
+  .book-card-wrapper, .image-left, .image-right {
+    flex-direction: column;
+  }
+  .book-image-wrapper {
+    text-align: center;
+  }
 }
 
 .fav-title {

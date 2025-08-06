@@ -7,3 +7,9 @@
   grid-gap: 16px;
   margin: auto;
 }
+
+@media (max-width: 799px) {
+  #music-grid {
+    grid-template-columns: auto;
+  }
+}
