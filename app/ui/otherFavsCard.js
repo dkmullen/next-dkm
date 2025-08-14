@@ -8,50 +8,41 @@ export default function OtherFavsCard({ item, index }) {
   return (
     <>
       <div
-        className={`${styles['otherfavs-card-wrapper']} ${
+        className={`${styles['book-card-wrapper']} ${
           index % 2 === 0 ? styles['image-left'] : styles['image-right']
         }`}
       >
         <div
+        className={styles['book-image-wrapper']}
           style={{
             position: 'relative',
             width: '100%',
             height: 'auto',
+            marginTop: '10px'
+            
           }}
         >
-          {!item.youtube && (
-            <Image
-              className={styles['otherfavs-thumbnail']}
-              src={
-                item.thumbnail
-                  ? `/images/${item.thumbnail}`
-                  : `/images/${item.yThumbnail}`
-              }
-              alt={item.alt}
-              width={300}
-              height={400}
-            />
-          )}
-          {item.youtube && (
-            <Image
-              className={styles['otherfavs-thumbnail']}
-              src={item.thumbnail}
-              alt={item.alt}
-              width={300}
-              height={400}
-            />
-          )}
+        {/* {!item.youtube && ( */}
+          <Image
+            className={styles['book-thumbnail']}
+            src={!item.youtube ? `/images/${item.thumbnail}` : item.thumbnail}
+            alt={item.alt}
+            width={item.imgWidth || 480}
+            height={item.imgHeight || 360}
+          />
         </div>
-        <Link href={item.url}>
-          <h2 className={styles['otherfavs-title']}>{item.title}</h2>
-        </Link>
         <div>
+          <h2 className={styles['book-title']}>
+            <strong>{item.title}</strong>
+          </h2>
           <p
             className={styles['book-description']}
             dangerouslySetInnerHTML={{ __html: safeHTML }}
           />
         </div>
       </div>
+    <hr style={{ margin: '2rem 0', opacity: '0.4' }} />
+
     </>
   );
 }

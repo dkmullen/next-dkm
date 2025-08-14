@@ -6,6 +6,8 @@ export const otherFavs = [
     url: 'https://www.theredhandfiles.com/',
     youtube: false,
     description: `<strong>Nick Cave</strong> is a well-known and much-loved musician. I know very little about his music. But Cave's writing at The Red Hand Files is astonishingly great. Here he answers letters from fans, often addressing the most painful questions with wisdom, grace and lots of hope. Cave is an everyday sage, an old soul, a man who has lived with his eyes open. Some of his best letters weave several unrelated questions in a cohesive answer, such as <a href="https://www.theredhandfiles.com/do-you-work-out-before-you-go-on-tour/" target="blank">this one about a chance meeting with drummer Charlie Watts</a>. Other favorites of mine include <a href="https://www.theredhandfiles.com/aunt-marnie-grief/" target="blank">this one about a grieving mother</a>, and <a href="https://www.theredhandfiles.com/stagger-me/" target="blank">this gracious and hopeful response to a struggling fan</a>.`,
+    imgWidth: 289,
+    imgHeight: 479,
   },
   {
     title: 'Yacht Rock',
