@@ -6,6 +6,12 @@
   --font-roboto-mono: 'Roboto Mono', Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
 body {
   color: var(--foreground);
   background: var(--background);
@@ -48,4 +54,10 @@ a:hover {
   background-color: var(--accent);
   border-color: var(--accent);
   color: var(--foreground)
+}
+li {
+  list-style-position: inside;
+}
+p {
+  margin: 1.2rem 0;
 }
