@@ -7,7 +7,7 @@ export default function ListItem({ post }) {
 
     return (
         <li className="text-2xl dark:text-black/90">
-            <Link href={`/posts/${id}`}>{title}</Link>
+            <Link href={`/articles/${id}`}>{title}</Link>
             <br />
             <p className="text-sm mt-1">
                 {formattedDate}

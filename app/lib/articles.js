@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html'
 
 export function getPost(slug) {
   const fullPath = path.join(process.cwd(), "app/articles", `${slug}.md`);
@@ -23,8 +25,6 @@ export function getSortedPostsData() {
   const fileNames = entries
     .filter((entry) => entry.isFile() && (entry.name.endsWith(".md")))
     .map((entry) => entry.name);
-
-    // console.log(fileNames)
 
   const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
@@ -54,7 +54,6 @@ export function getSortedPostsData() {
 }
 
 export async function getPostData(id) {
-  console.log('hey now', id)
     const fullPath = path.join(postsDirectory, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -74,7 +73,7 @@ export async function getPostData(id) {
         date: matterResult.data.date,
         contentHtml,
     }
-    console.log(blogPostWithHTML)
+    return blogPostWithHTML
 
     // Combine the data with the id
     // return blogPostWithHTML
