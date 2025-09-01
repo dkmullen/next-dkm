@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 
 export function getPost(slug) {
-  const fullPath = path.join(process.cwd(), "app/blogposts", `${slug}.mdx`);
+  const fullPath = path.join(process.cwd(), "app/articles", `${slug}.md`);
   const source = fs.readFileSync(fullPath, "utf8");
 
   const { content, data } = matter(source);
@@ -14,17 +14,17 @@ export function getPost(slug) {
   };
 }
 
-const postsDirectory = path.join(process.cwd(), 'app', 'blogposts');
+const postsDirectory = path.join(process.cwd(), 'app', 'articles');
  
 export function getSortedPostsData() {
 
-  // Get file names under /posts
+  // Get file names under /articles
   const entries = fs.readdirSync(postsDirectory, { withFileTypes: true });
   const fileNames = entries
-    .filter((entry) => entry.isFile() && (entry.name.endsWith(".md") || entry.name.endsWith(".mdx")))
+    .filter((entry) => entry.isFile() && (entry.name.endsWith(".md")))
     .map((entry) => entry.name);
 
-    console.log(fileNames)
+    // console.log(fileNames)
 
   const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
@@ -53,7 +53,8 @@ export function getSortedPostsData() {
   });
 }
 
-export async function getPostData() {
+export async function getPostData(id) {
+  console.log('hey now', id)
     const fullPath = path.join(postsDirectory, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -69,10 +70,12 @@ export async function getPostData() {
     const blogPostWithHTML = {
         id,
         title: matterResult.data.title,
+        category: matterResult.data.category,
         date: matterResult.data.date,
         contentHtml,
     }
+    console.log(blogPostWithHTML)
 
     // Combine the data with the id
-    return blogPostWithHTML
+    // return blogPostWithHTML
 }

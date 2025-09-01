@@ -1,18 +1,19 @@
-import { getSortedPostsData } from "../lib/posts"
-import ListItem from '../ui/listItem'
+import { getSortedPostsData } from "../lib/articles";
+import ListItem from "../ui/listItem";
 
 export default function Page() {
-  const posts = getSortedPostsData()
-  console.log(posts)
+  const articles = getSortedPostsData()
+
   return (
-    <>
-      <p>Writing</p>
-            <ul>
-                {posts.map(post => (
-                    <ListItem key={post.id} title={post.title} date={post.date} id={post.id} />
-                ))}
-            </ul>
-    
-    </>
-  )
+    <div className="page">
+      <h3>Writing</h3>
+      <section>
+        {articles !== null &&
+          articles.map((article) => (
+            <ListItem post={article} key={article.id} />
+          ))
+        }
+      </section>
+    </div>
+  );
 }

@@ -1,10 +1,8 @@
-// Listitem.tsx
 import Link from "next/link"
 import getFormattedDate from "../lib/getFormattedDate"
 
-export default function ListItem(post) {
+export default function ListItem({ post }) {
     const { id, title, date } = post
-    console.log(post)
     const formattedDate = getFormattedDate(date)
 
     return (

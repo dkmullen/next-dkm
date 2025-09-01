@@ -1,7 +1,6 @@
-"use client"
-
 ---
 title: 'Two Forms of Pre-rendering'
+category: 'nextJS'
 date: '2020-01-01'
 ---
  
