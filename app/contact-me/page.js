@@ -1,14 +1,12 @@
 import styles from './page.module.css';
 import clsx from 'clsx';
+import { PageHeader } from '../components/pageHeader';
 
 export default function Page() {
   return (
     <div className='page'>
-      <h3>Contact Me</h3>
-      <form
-        id='contact-form'
-
-      >
+      <PageHeader line1='Contact Me' />
+      <form className={styles['contact-form']}>
         <div className={styles['form-element']}>
           <label htmlFor='name'>Name:</label>
           <div>

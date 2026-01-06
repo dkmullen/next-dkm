@@ -35,6 +35,9 @@ body {
 .center {
   text-align: center;
 }
+.smaller {
+  font-size: smaller;
+}
 a {
   text-decoration: none;
   color: var(--accent);
@@ -49,7 +52,6 @@ a:hover {
   font-size: 18px;
   padding: 0 1rem;
 }
-
 .button.accent {
   background-color: var(--accent);
   border-color: var(--accent);
@@ -60,4 +62,7 @@ li {
 }
 p {
   margin: 1.2rem 0;
+}
+.page-header {
+  margin-top: 1rem;
 }

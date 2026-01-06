@@ -5,7 +5,7 @@
   margin-bottom: 1rem;
   padding: 0 10px;
   height: 40px;
-  width: 400px;
+  width: 370px;
 }
 .dark .input {
   background: rgb(51, 51, 51);
@@ -14,6 +14,7 @@
 .text-area {
   padding: 10px;
   margin-bottom: 1rem;
+  width: 370px;
 }
 
 .error-message {
@@ -23,4 +24,8 @@
 
 .hide {
   visibility: hidden;
+}
+.contact-form {
+  width: 370px;
+  margin: auto;
 }
